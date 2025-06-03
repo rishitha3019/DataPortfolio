@@ -4,6 +4,6 @@ import ghPages from 'vite-plugin-gh-pages'
 
 export default defineConfig({
   plugins: [react(), ghPages()],
-  base: "/your-repo-name/", // ← Replace with your GitHub repo name
+  base: "/DataPortfolio/", // ← Replace with your GitHub repo name
 })
 
