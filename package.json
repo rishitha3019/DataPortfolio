@@ -4,4 +4,3 @@
   "preview": "vite preview",
   "deploy": "vite build && vite-gh-pages"
 }
-
