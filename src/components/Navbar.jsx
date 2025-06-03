@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -18,9 +19,9 @@ const Navbar = () => {
     >
       <h1 className="text-xl font-bold">Rishitha.dev</h1>
       <div className="flex items-center space-x-6">
-        <a href="#projects" className="hover:underline">Projects</a>
-        <a href="#blog" className="hover:underline">Blog</a>
-        <a href="#contact" className="hover:underline">Contact</a>
+       <Link to="/projects" className="hover:underline">Projects</Link>
+       <Link to="/skills" className="hover:underline">Skills</Link>
+       <Link to="/contact" className="hover:underline">Contact</Link>
         <button
           onClick={toggleDark}
           className="text-sm px-2 py-1 border rounded hover:bg-gray-200 dark:hover:bg-gray-800"
